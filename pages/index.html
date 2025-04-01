@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basics, Utilities, Forms, and Components</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="text-center mt-5">Knowledge Check | Bootstrap Basics, Utilities, Forms, and Components</h1>
+    
+    <nav class="navbar navbar-expand-lg container bg-info sticky-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsiblenavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsiblenavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <form class="form-horizontal" action="/action_page.php">
+            <div class="row mt-3 mb-3">
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="firstname" class="control-label col-xs-3">First Name:</label>
+                        <div class="col-xs-9">
+                            <input class="col-sm-12 bg-light text-black" type="name" class="form-control" id="name" required placeholder="Enter Your First Name" name="name">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="form-group">
+                        <label for="lastname">Last Name:</label>
+                        <div class="col-xs-9">
+                            <input class="col-sm-12 bg-light text-black" type="lname" class="form-control" id="lname" required placeholder="Enter Your Last Name" name="lname">
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="col-sm-6 was-validated">
+                    <div class="form-group">
+                        <label for="email">E-Mail:</label>
+                        <div class="col-xs-9">
+                            <input class="col-sm-12 bg-light text-black" type="text" class="form-control" id="email" required placeholder="Enter Your E-Mail" name="email">
+                            <div class="valid-feedback">Valid</div>
+                            <div class="invalid-feedback">Please fill out this field.</div>
+                        </div>
+                    </div>
+                </div>
+                    <div class="col-sm-6 was-validated">
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <div class="col-xs-9"> 
+                                <input class="col-sm-12 bg-light text-black" type="password" class="form-control" id="password" required placeholder="Enter password" name="password">
+                                <div class="valid-feedback">Valid</div>
+                                <div class="invalid-feedback">Please fill out this field.</div>
+                            </div>
+                        </div>
+                    </div>
+                
+                <div class="form-check mt-3 was-validated">
+                    <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+                    <label class="form-check-label" for="myCheck">I Agree to Terms</label>
+                        <div class="valid-feedback">Valid</div>
+                        <div class="invalid-feedback">Check this box to continue.</div>
+                </div>
+                
+                <button type="button" class="btn btn-success mt-2">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="container mt-3">
+        <table class="table table-striped table-hover table-responsive-sm table-bordered">
+            <thead class="table-dark">
+                <tr>
+                    <th>First Name:</th>
+                    <th>Last Name:</th>
+                    <th>E-Mail</th>
+                    <th>Sample</th>
+                    <th>Sample</th>
+                    <th>Sample</th>
+                    <th>Sample</th>
+                    <th>Sample</th>
+                    <th>Sample</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>Cena</td>
+                    <td>JCena@YouCantSeeMe.com</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                </tr>
+                <tr>
+                    <td>Randy</td>
+                    <td>Orton</td>
+                    <td>ROrton@theViper.com</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                </tr>
+                <tr>
+                    <td>Liv</td>
+                    <td>Morgan</td>
+                    <td>LMorgan@YouOnlyLivOnce.com</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                    <td>Sample</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="container mt-3">
+       <img class="img-fluid rounded" src="/static/wrestlingring.jpg" alt="wrestling ring with referee and wrestlers">
+       <img class="img-fluid rounded-circle mt-3" src="/static/wrestlinglogo.jpg" width="1500" height="500" alt="wrestling logo">
+    </div>
+
+    <div class="container mt-3 mb-3 d-grid gap-3">
+        <button type="button" class="btn btn-success btn-lg btn-block">Awesome!</button>
+        <button type="button" class="btn btn-danger btn-lg btn-block d-none d-md-block">Boooo!</button>
+    </div>
+</body>
+</html>
